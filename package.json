@@ -1,42 +1,35 @@
 {
-  "id":"divgivm",
-  "version":"0.0.1",
+  "id":"hack01",
+  "version":"1.0.0",
   "auth":{
-    "name":"AB&IT Dev Team",
-    "email":"sam@abnit.info",
-    "org":"AB&IT Co.,Ltd."
+    "name":"YOUR_TEAM_NAME",
+    "email":"YOUR_TEAM_EMAIL",
+    "org":"YOUR_ORGANIZATION"
   },
   "dependencies":{},
-  "description":"나눔기부",
-  "repository":{
-    "type":"git",
-    "url":"git@github.com:parky2048/divgivm.git"
-  },
-  "homepage":"http://www.abnit.info",
+  "description":"YOUR_OWN_DESCRIPTION",
+  "repository":{},
+  "homepage":"http://www.theloop.co.kr",
   "function":{
     "invoke":[
       {
-        "method":"propose",
-        "params":
-           {
-             "proposer": "FinAcno" ,
-             "counterparties": [],
-             "content": "contract text",
-             "quorum": "(int)quorum"
-           },
-        "description":"new member"
-          }
-        ],
-     "query":[
+        "method":"invoke_foo1",
+        "params": {
+          "key":"string",
+          "value":"string"
+        },
+        "description":"Example of function in invoke."
+      }
+    ],
+    "query":[
       {
-        "method":"get_user_contracts",
-        "params":{"tx_hash":"IsTuno"},
-        "description":"Issue Certificate"
+        "method":"query_foo1",
+        "params": {
+          "key":"string"
+        },
+        "description":"Example of function in query."
       }
     ]
   },
-  "main":"divgivm"
+  "main":"hack01"
 }
-
-
-
