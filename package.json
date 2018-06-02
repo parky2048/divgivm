@@ -1,5 +1,5 @@
 {
-  "id":"contract_sample",
+  "id":"divgivm",
   "version":"0.0.1",
   "auth":{
     "name":"AB&IT Dev Team",
@@ -14,13 +14,6 @@
   },
   "homepage":"http://www.abnit.info",
   "function":{
-    "query":[
-      {
-        "method":"get_user_contracts",
-        "params":{"tx_hash":"IsTuno"},
-        "description":"Issue Certificate"
-      }
-    ],
     "invoke":[
       {
         "method":"propose",
@@ -30,19 +23,20 @@
              "counterparties": [],
              "content": "contract text",
              "quorum": "(int)quorum"
-           }
-        ,
+           },
         "description":"new member"
-      },
-      {
-        "method":"approve",
-        "params":{
-            "user_id":"string" ,
-            "contract_id":"string"
           }
+        ],
+     "query":[
+      {
+        "method":"get_user_contracts",
+        "params":{"tx_hash":"IsTuno"},
+        "description":"Issue Certificate"
       }
     ]
   },
-  "main":"contract_score"
-
+  "main":"divgivm"
 }
+
+
+
