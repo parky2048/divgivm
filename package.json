@@ -1,35 +1,47 @@
 {
-  "id":"divgivm",
-  "version":"1.0.0",
+  "id":"contract_sample",
+  "version":"0.0.1",
   "auth":{
-    "name":"ABNIT",
+    "name":"ABnIT Dev Team",
     "email":"sam@abnit.info",
-    "org":"ABNIT"
+    "org":"Theloop inc"
   },
   "dependencies":{},
-  "description":"ABNIT",
-  "repository":{},
+  "description":"contract_sample",
+  "repository":{
+    "type":"git",
+    "url":"git@github.com:parky2048/contract_sample.git"
+  },
   "homepage":"http://www.abnit.info",
   "function":{
-    "invoke":[
-      {
-        "method":"invoke_foo1",
-        "params": {
-          "key":"string",
-          "value":"string"
-        },
-        "description":"Example of function in invoke."
-      }
-    ],
     "query":[
       {
-        "method":"query_foo1",
-        "params": {
-          "key":"string"
-        },
-        "description":"Example of function in query."
+        "method":"get_user_contracts",
+        "params":{"tx_hash":"user_id"},
+        "description":"Issue Certificate"
+      }
+    ],
+    "invoke":[
+      {
+        "method":"propose",
+        "params":
+           {
+             "proposer": "propose_user_id" ,
+             "counterparties": [],
+             "content": "contract text",
+             "quorum": "(int)quorum"
+           }
+        ,
+        "description":"new member"
+      },
+      {
+        "method":"approve",
+        "params":{
+            "user_id":"string" ,
+            "contract_id":"string"
+          }
       }
     ]
   },
-  "main":"divgivm"
+  "main":"contract_score"
 }
