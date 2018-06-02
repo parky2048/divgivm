@@ -1,5 +1,5 @@
 {
-  "id":"divgivm",
+  "id":"contract_score",
   "version":"0.0.1",
   "auth":{
     "name":"ABnIT Dev Team",
@@ -8,10 +8,7 @@
   },
   "dependencies":{},
   "description":"contract_sample",
-  "repository":{
-    "type":"git",
-    "url":"git@github.com:parky2048/contract_sample.git"
-  },
+  "repository":{},
   "homepage":"http://www.abnit.info",
   "function":{
     "invoke":[
@@ -35,5 +32,5 @@
         }
       ]
    },
-  "main":"divgivm"
+  "main":"contract_score"
 }
