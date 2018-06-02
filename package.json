@@ -20,6 +20,7 @@
         "params":
            {
              "proposer": "propose_user_id" ,
+             "counterparties": [],
              "content": "contract text",
              "quorum": "(int)quorum"
            },
