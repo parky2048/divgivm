@@ -1,10 +1,10 @@
 {
-  "id":"contract_sample",
+  "id":"divgivm",
   "version":"0.0.1",
   "auth":{
     "name":"ABnIT Dev Team",
     "email":"sam@abnit.info",
-    "org":"Theloop inc"
+    "org":"ABnIT Co.,Ltd."
   },
   "dependencies":{},
   "description":"contract_sample",
@@ -20,7 +20,6 @@
         "params":
            {
              "proposer": "propose_user_id" ,
-             "counterparties": [],
              "content": "contract text",
              "quorum": "(int)quorum"
            },
@@ -35,5 +34,5 @@
         }
       ]
    },
-  "main":"contract_score"
+  "main":"divgivm"
 }
