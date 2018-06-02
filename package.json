@@ -1,15 +1,15 @@
 {
-  "id":"hack01",
+  "id":"divgivm",
   "version":"1.0.0",
   "auth":{
-    "name":"YOUR_TEAM_NAME",
-    "email":"YOUR_TEAM_EMAIL",
-    "org":"YOUR_ORGANIZATION"
+    "name":"ABNIT",
+    "email":"sam@abnit.info",
+    "org":"ABNIT"
   },
   "dependencies":{},
-  "description":"YOUR_OWN_DESCRIPTION",
+  "description":"ABNIT",
   "repository":{},
-  "homepage":"http://www.theloop.co.kr",
+  "homepage":"http://www.abnit.info",
   "function":{
     "invoke":[
       {
@@ -31,5 +31,5 @@
       }
     ]
   },
-  "main":"hack01"
+  "main":"divgivm"
 }
